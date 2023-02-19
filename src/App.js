@@ -1,6 +1,8 @@
 
 // import Greet2 from "./Components/Greet2";
-import Message from "./Components/Message";
+// import Message from "./Components/Message";
+
+import ClickHandler from "./Components/ClickHandler";
 
 
 function App() {
@@ -14,7 +16,8 @@ function App() {
         <p>THIS IS CHILDREN PROPS</p>
         </Greet2> */}
 
-        <Message/>
+        {/* <Message/> */}
+        <ClickHandler/>
     </div>
   );
 }
