@@ -2,7 +2,11 @@
 // import Greet2 from "./Components/Greet2";
 // import Message from "./Components/Message";
 
-import ParentComponent from "./Components/ParentComponent";
+import NameList from "./Components/NameList";
+
+// import UserGreeting from "./Components/UserGreeting";
+
+// import ParentComponent from "./Components/ParentComponent";
 
 // import ClickHandler from "./Components/ClickHandler";
 
@@ -20,7 +24,9 @@ function App() {
 
         {/* <Message/> */}
         {/* <ClickHandler/> */}
-        <ParentComponent/>
+        {/* <ParentComponent/> */}
+        {/* <UserGreeting/> */}
+        <NameList/>
     </div>
   );
 }
