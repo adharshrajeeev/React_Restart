@@ -1,6 +1,10 @@
 const Greet2=(props)=>{
     return (
-        <h1>HELLO {props.name}</h1>
+        <div>
+
+            <h1>HELLO {props.name} also Known As {props.heroName}</h1>
+            {props.children}
+        </div>
     )
 }
 
