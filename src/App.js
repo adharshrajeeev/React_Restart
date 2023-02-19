@@ -2,7 +2,9 @@
 // import Greet2 from "./Components/Greet2";
 // import Message from "./Components/Message";
 
-import NameList from "./Components/NameList";
+import PostList from "./Components/PostList";
+
+// import NameList from "./Components/NameList";
 
 // import UserGreeting from "./Components/UserGreeting";
 
@@ -26,7 +28,8 @@ function App() {
         {/* <ClickHandler/> */}
         {/* <ParentComponent/> */}
         {/* <UserGreeting/> */}
-        <NameList/>
+        {/* <NameList/> */}
+        <PostList/>
     </div>
   );
 }
