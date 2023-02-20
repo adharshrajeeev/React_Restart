@@ -2,7 +2,13 @@
 // import Greet2 from "./Components/Greet2";
 // import Message from "./Components/Message";
 
-import PostList from "./Components/PostList";
+import HookUseState from "./Components/HookUseState";
+
+// import HookCounter3 from "./Components/HookCounter3";
+
+// import Couter from "./Components/Couter";
+
+// import PostList from "./Components/PostList";
 
 // import NameList from "./Components/NameList";
 
@@ -29,7 +35,10 @@ function App() {
         {/* <ParentComponent/> */}
         {/* <UserGreeting/> */}
         {/* <NameList/> */}
-        <PostList/>
+        {/* <PostList/> */}
+        {/* <Couter/> */}
+        {/* <HookCounter3/> */}
+        <HookUseState/>
     </div>
   );
 }
