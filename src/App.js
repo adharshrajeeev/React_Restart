@@ -24,6 +24,7 @@ import ComponentC from "./Components/ComponentC";
 // import ClickHandler from "./Components/ClickHandler";
 
 export const UserContext=React.createContext()
+export const ChannelContext=React.createContext()
 
 
 function App() {
@@ -48,8 +49,10 @@ function App() {
         {/* <HookUseState/> */}
         {/* <UseReducerHook/> */}
         <UserContext.Provider value={'Adharsh'}>
+        <ChannelContext.Provider value={'Codevelution'}>
 
         <ComponentC/>
+        </ChannelContext.Provider>
         </UserContext.Provider>
     </div>
   );
