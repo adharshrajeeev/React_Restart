@@ -2,8 +2,10 @@
 // import Greet2 from "./Components/Greet2";
 // import Message from "./Components/Message";
 
-import React from "react";
-import ComponentC from "./Components/ComponentC";
+import React, { Fragment } from "react";
+import Headers from "./Components/Header/Headers";
+import Products from "./Components/ProductList/Products";
+// import ComponentC from "./Components/ComponentC";
 
 // import UseReducerHook from "./Components/UseReducerHook";
 
@@ -48,12 +50,16 @@ function App() {
         {/* <HookCounter3/> */}
         {/* <HookUseState/> */}
         {/* <UseReducerHook/> */}
-        <UserContext.Provider value={'Adharsh'}>
+        {/* <UserContext.Provider value={'Adharsh'}>
         <ChannelContext.Provider value={'Codevelution'}>
 
         <ComponentC/>
         </ChannelContext.Provider>
-        </UserContext.Provider>
+        </UserContext.Provider> */}
+        <Fragment>
+          <Headers/>
+          <Products/>
+        </Fragment>
     </div>
   );
 }
