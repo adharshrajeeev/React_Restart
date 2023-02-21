@@ -2,7 +2,9 @@
 // import Greet2 from "./Components/Greet2";
 // import Message from "./Components/Message";
 
-import HookUseState from "./Components/HookUseState";
+import UseReducerHook from "./Components/UseReducerHook";
+
+// import HookUseState from "./Components/HookUseState";
 
 // import HookCounter3 from "./Components/HookCounter3";
 
@@ -38,7 +40,8 @@ function App() {
         {/* <PostList/> */}
         {/* <Couter/> */}
         {/* <HookCounter3/> */}
-        <HookUseState/>
+        {/* <HookUseState/> */}
+        <UseReducerHook/>
     </div>
   );
 }
