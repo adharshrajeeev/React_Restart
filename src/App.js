@@ -2,7 +2,10 @@
 // import Greet2 from "./Components/Greet2";
 // import Message from "./Components/Message";
 
-import UseReducerHook from "./Components/UseReducerHook";
+import React from "react";
+import ComponentC from "./Components/ComponentC";
+
+// import UseReducerHook from "./Components/UseReducerHook";
 
 // import HookUseState from "./Components/HookUseState";
 
@@ -19,6 +22,8 @@ import UseReducerHook from "./Components/UseReducerHook";
 // import ParentComponent from "./Components/ParentComponent";
 
 // import ClickHandler from "./Components/ClickHandler";
+
+export const UserContext=React.createContext()
 
 
 function App() {
@@ -41,7 +46,11 @@ function App() {
         {/* <Couter/> */}
         {/* <HookCounter3/> */}
         {/* <HookUseState/> */}
-        <UseReducerHook/>
+        {/* <UseReducerHook/> */}
+        <UserContext.Provider value={'Adharsh'}>
+
+        <ComponentC/>
+        </UserContext.Provider>
     </div>
   );
 }
