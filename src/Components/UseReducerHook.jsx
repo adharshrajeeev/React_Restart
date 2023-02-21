@@ -1,18 +1,16 @@
-import React, { useReducer} from 'react'
+import  { useReducer} from 'react'
+import usageReducers from '../Reducers/usageReducers'
 
-function valueReducer(state,action){
-  if(action === 'increment'){
 
-    return state+1;
-  }else{
-    return state -1 
-;  }
-}
 
 function UseReducerHook() {
+  const initialState={
+    value:0,
+    color:'white'
+  }
     // const [count,setCount]=useState(0);
     // const [bgColor,setbgColor]=useState('white');
-      const [value,dispatch]=useReducer(valueReducer,0)
+      const [state,dispatch]=useReducer(usageReducers,initialState)
   return (
     <div>
         {/* <button onClick={()=>setCount(count + 1)}>Increment</button> 
@@ -21,8 +19,11 @@ function UseReducerHook() {
         <button onClick={()=>setCount(count - 1)}>Decrement</button>
          <button onClick={()=>setbgColor('blue')}>Blue</button> */}
          <button onClick={()=>dispatch('increment')}>Increment</button>
-         <h1>{value}</h1>
-         <button onClick={()=>dispatch('decerement')}>Decrement</button>
+         <button  onClick={()=>dispatch('green')}>Green</button>
+         <h1 style={{background:state.color}}>{state.value}</h1>
+         <button onClick={()=>dispatch('decrement')}>Decrement</button>
+         <button  onClick={()=>dispatch('blue')}>Blue</button>
+
     </div>
   )
 }
