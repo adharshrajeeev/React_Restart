@@ -2,9 +2,10 @@
 // import Greet2 from "./Components/Greet2";
 // import Message from "./Components/Message";
 
-import React, { Fragment } from "react";
-import Headers from "./Components/Header/Headers";
-import Products from "./Components/ProductList/Products";
+import React from "react";
+import ReactRedux from "./Components/ReactRedux";
+// import Headers from "./Components/Header/Headers";
+// import Products from "./Components/ProductList/Products";
 // import ComponentC from "./Components/ComponentC";
 
 // import UseReducerHook from "./Components/UseReducerHook";
@@ -56,10 +57,11 @@ function App() {
         <ComponentC/>
         </ChannelContext.Provider>
         </UserContext.Provider> */}
-        <Fragment>
+        {/* <Fragment>
           <Headers/>
           <Products/>
-        </Fragment>
+        </Fragment> */}
+        <ReactRedux/>
     </div>
   );
 }
